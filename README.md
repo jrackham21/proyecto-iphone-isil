@@ -1,4 +1,4 @@
-##PROYECTO APLICACIONES ISIL
-###Integrantes:
+## PROYECTO APLICACIONES ISIL
+### Integrantes:
 * Norvil Arce Sánchez
 * Sheryl Garcés Chary
