@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NyB-nT-aSW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZQC-uk-eK5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1801" y="78"/>
         </scene>
-        <!--View Controller-->
+        <!--Registro View Controller-->
         <scene sceneID="4KN-y1-uIC">
             <objects>
-                <viewController id="UPv-En-GeE" sceneMemberID="viewController">
+                <viewController id="UPv-En-GeE" customClass="RegistroViewController" customModule="proyecto_cliente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iv3-GR-exJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,8 +90,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crearemos tu cuenta para continuar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60d-ob-TQV">
-                                        <rect key="frame" x="95" y="127.5" width="224" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crearemos tu cuenta para continuar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60d-ob-TQV">
+                                        <rect key="frame" x="95" y="127.5" width="224.5" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -115,6 +115,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UeI-Sn-jvj">
                                                 <rect key="frame" x="0.0" y="19" width="374" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -126,6 +127,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRf-kZ-Wkl">
                                                 <rect key="frame" x="0.0" y="79.5" width="374" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -137,6 +139,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-xw-jYE">
                                                 <rect key="frame" x="0.0" y="140" width="374" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                             </textField>
@@ -148,6 +151,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxj-gg-66o">
                                                 <rect key="frame" x="0.0" y="200.5" width="374" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
                                             </textField>
@@ -159,6 +163,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3C-kN-br7">
                                                 <rect key="frame" x="0.0" y="261" width="374" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                             </textField>
@@ -170,6 +175,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C2M-IW-obR">
                                                 <rect key="frame" x="0.0" y="321.5" width="374" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                             </textField>
@@ -223,12 +229,12 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="0yZ-qv-xsd" firstAttribute="centerX" secondItem="DrL-zO-RtH" secondAttribute="centerX" id="1B5-La-nUg"/>
                                     <constraint firstItem="NWC-GY-oVw" firstAttribute="top" secondItem="ktu-lD-bXk" secondAttribute="bottom" constant="20" id="1Oa-8v-zUm"/>
                                     <constraint firstItem="ktu-lD-bXk" firstAttribute="leading" secondItem="Wuv-b8-zDc" secondAttribute="leading" constant="20" id="2qj-o2-VEo"/>
                                     <constraint firstItem="0yZ-qv-xsd" firstAttribute="top" secondItem="DrL-zO-RtH" secondAttribute="bottom" constant="5" id="3Up-q7-qT2"/>
-                                    <constraint firstItem="60d-ob-TQV" firstAttribute="leading" secondItem="Wuv-b8-zDc" secondAttribute="leading" constant="95" id="3eq-pJ-SJw"/>
                                     <constraint firstItem="DrL-zO-RtH" firstAttribute="top" secondItem="rVF-6E-M5c" secondAttribute="bottom" constant="20" id="9EB-an-01E"/>
                                     <constraint firstItem="rVF-6E-M5c" firstAttribute="top" secondItem="Wuv-b8-zDc" secondAttribute="top" id="DfC-eO-MxY"/>
                                     <constraint firstAttribute="trailing" secondItem="NWC-GY-oVw" secondAttribute="trailing" constant="35" id="ERQ-QS-Bse"/>
@@ -249,26 +255,37 @@
                                     <constraint firstAttribute="bottom" secondItem="aGT-uP-1lm" secondAttribute="bottom" constant="80" id="ydB-SI-Tow"/>
                                     <constraint firstItem="aGT-uP-1lm" firstAttribute="top" secondItem="NWC-GY-oVw" secondAttribute="bottom" constant="15" id="ykY-7b-dsM"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ryu-L5-c1a" appends="YES" id="i6f-hN-SyB"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q4J-9J-ZwK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="Wuv-b8-zDc" secondAttribute="bottom" constant="-34" id="4AV-qg-RAj"/>
                             <constraint firstItem="Wuv-b8-zDc" firstAttribute="top" secondItem="Q4J-9J-ZwK" secondAttribute="top" id="HG0-Kr-Xse"/>
                             <constraint firstItem="Wuv-b8-zDc" firstAttribute="leading" secondItem="Q4J-9J-ZwK" secondAttribute="leading" id="Tff-rV-LgV"/>
                             <constraint firstItem="Wuv-b8-zDc" firstAttribute="trailing" secondItem="Q4J-9J-ZwK" secondAttribute="trailing" id="YTh-gG-Ctn"/>
+                            <constraint firstAttribute="bottom" secondItem="Wuv-b8-zDc" secondAttribute="bottom" id="ohf-1X-J6X"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="constraintBottomScroll" destination="ohf-1X-J6X" id="w8Y-EB-7ux"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOj-FI-nVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ryu-L5-c1a">
+                    <connections>
+                        <action selector="clickCloseKeyboard:" destination="UPv-En-GeE" id="6Mi-cx-atY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1831.8840579710147" y="1475.2232142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Correo Recuperacion View Controller-->
         <scene sceneID="bvV-Nj-iTL">
             <objects>
-                <viewController id="QIF-Jj-HUI" sceneMemberID="viewController">
+                <viewController id="QIF-Jj-HUI" customClass="CorreoRecuperacionViewController" customModule="proyecto_cliente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcW-XS-NaC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +304,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduzca su direccion de correo electronico para recuperar su constraseña" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vov-eJ-3yU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduzca su dirección de correo electrónico para recuperar su contraseña" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vov-eJ-3yU">
                                 <rect key="frame" x="65.5" y="172" width="283" height="35.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -315,6 +332,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LeD-rS-qp1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LeD-rS-qp1" firstAttribute="bottom" secondItem="o2J-JK-I7I" secondAttribute="bottom" constant="50" id="1Rc-mY-3wN"/>
                             <constraint firstItem="duM-YR-nUh" firstAttribute="top" secondItem="LeD-rS-qp1" secondAttribute="top" constant="20" id="AFz-Ez-3Ch"/>
@@ -335,16 +353,24 @@
                             <constraint firstItem="o2J-JK-I7I" firstAttribute="leading" secondItem="LeD-rS-qp1" secondAttribute="leading" constant="35" id="nd4-9f-eEl"/>
                             <constraint firstItem="Vov-eJ-3yU" firstAttribute="width" secondItem="v2G-M4-dZd" secondAttribute="width" multiplier="0.8" id="nlL-uF-dsB"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JHR-oi-FyK" appends="YES" id="Lfb-HW-X4N"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NW0-q3-WDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JHR-oi-FyK">
+                    <connections>
+                        <action selector="clickCloseKeyboard:" destination="QIF-Jj-HUI" id="jv2-5C-5Y3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1832" y="2153"/>
         </scene>
-        <!--View Controller-->
+        <!--Nueva Contrasena View Controller-->
         <scene sceneID="WOE-UP-T3t">
             <objects>
-                <viewController id="ZQC-uk-eK5" sceneMemberID="viewController">
+                <viewController id="ZQC-uk-eK5" customClass="NuevaContrasenaViewController" customModule="proyecto_cliente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PF4-o5-y4T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,6 +429,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mII-Vr-49F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="mII-Vr-49F" firstAttribute="bottom" secondItem="mjO-sc-Gb1" secondAttribute="bottom" constant="50" id="25X-Ae-gqS"/>
                             <constraint firstItem="0A1-iN-Lxt" firstAttribute="width" secondItem="gST-LI-TRh" secondAttribute="width" multiplier="0.8" id="2e6-ig-J47"/>
@@ -428,9 +455,17 @@
                             <constraint firstItem="1Fj-vh-cJc" firstAttribute="centerX" secondItem="mII-Vr-49F" secondAttribute="centerX" id="pLu-us-Eey"/>
                             <constraint firstItem="d25-IE-s91" firstAttribute="top" secondItem="fB0-qq-1oI" secondAttribute="bottom" constant="10" id="vrK-QR-vfA"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="y3C-vD-lVo" appends="YES" id="IV3-l9-a8r"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJf-Ej-GGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="y3C-vD-lVo">
+                    <connections>
+                        <action selector="clickCloseKeyboard:" destination="ZQC-uk-eK5" id="rtF-Mh-PwY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2630" y="2153"/>
         </scene>
