@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UPv-En-GeE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kn5-Iy-O63">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -364,7 +364,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1831.8840579710147" y="1475.2232142857142"/>
+            <point key="canvasLocation" x="2629" y="860"/>
         </scene>
         <!--Correo Recuperacion View Controller-->
         <scene sceneID="bvV-Nj-iTL">
@@ -402,13 +402,13 @@
                                 </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-EF-8Q1">
-                                <rect key="frame" x="20" y="334" width="374" height="34"/>
+                                <rect key="frame" x="20" y="402" width="374" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vG-y5-cJd">
-                                <rect key="frame" x="20" y="310" width="374" height="14"/>
+                                <rect key="frame" x="20" y="378" width="374" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -543,6 +543,7 @@
                             <outletCollection property="gestureRecognizers" destination="y3C-vD-lVo" appends="YES" id="IV3-l9-a8r"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="8Pv-Ub-E1P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJf-Ej-GGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="y3C-vD-lVo">
@@ -775,7 +776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ehd-46-SeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818.840579710145" y="803.57142857142856"/>
+            <point key="canvasLocation" x="1000" y="860"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zgq-zF-DNY">

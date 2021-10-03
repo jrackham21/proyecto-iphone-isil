@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  proyecto-conductor
+//  proyecto-cliente
 //
 //  Created by Jack Rackham on 9/24/21.
 //
