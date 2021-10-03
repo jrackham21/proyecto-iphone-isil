@@ -15,9 +15,19 @@ class RegistroViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    @IBAction func clickBtnBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func clickBtnAcceder(_ sender: Any) {
+        //TODO
+        
+    }
+    
+    @IBAction func clickBtnRegistrame(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
