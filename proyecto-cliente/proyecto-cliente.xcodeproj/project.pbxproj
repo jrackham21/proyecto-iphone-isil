@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		88142C8B2708030200406B11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88142C8A2708030200406B11 /* LoginViewController.swift */; };
+		88C1DFD52709E7E6008E1F5E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1DFD42709E7E6008E1F5E /* SplashViewController.swift */; };
+		88C1DFD82709E7FE008E1F5E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1DFD72709E7FE008E1F5E /* HomeViewController.swift */; };
+		88C1DFDB2709E813008E1F5E /* FelicidadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1DFDA2709E813008E1F5E /* FelicidadesViewController.swift */; };
 		E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4172AA026FDABEF003B91E4 /* AppDelegate.swift */; };
 		E4172AA326FDABEF003B91E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4172AA226FDABEF003B91E4 /* SceneDelegate.swift */; };
 		E4172AA526FDABEF003B91E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4172AA426FDABEF003B91E4 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		88142C8A2708030200406B11 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88C1DFD42709E7E6008E1F5E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		88C1DFD72709E7FE008E1F5E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		88C1DFDA2709E813008E1F5E /* FelicidadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicidadesViewController.swift; sourceTree = "<group>"; };
 		E4172A9D26FDABEF003B91E4 /* proyecto-cliente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "proyecto-cliente.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4172AA026FDABEF003B91E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4172AA226FDABEF003B91E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 				E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */,
 				E4A8EB1227058AAC00E0BA97 /* NuevaContrasenaViewController.swift */,
 				88142C8A2708030200406B11 /* LoginViewController.swift */,
+				88C1DFD42709E7E6008E1F5E /* SplashViewController.swift */,
+				88C1DFD72709E7FE008E1F5E /* HomeViewController.swift */,
+				88C1DFDA2709E813008E1F5E /* FelicidadesViewController.swift */,
 			);
 			path = "proyecto-cliente";
 			sourceTree = "<group>";
@@ -154,8 +163,11 @@
 				E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */,
 				E4A8EB1327058AAC00E0BA97 /* NuevaContrasenaViewController.swift in Sources */,
 				E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */,
+				88C1DFD82709E7FE008E1F5E /* HomeViewController.swift in Sources */,
 				E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */,
 				E4172AA326FDABEF003B91E4 /* SceneDelegate.swift in Sources */,
+				88C1DFDB2709E813008E1F5E /* FelicidadesViewController.swift in Sources */,
+				88C1DFD52709E7E6008E1F5E /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
