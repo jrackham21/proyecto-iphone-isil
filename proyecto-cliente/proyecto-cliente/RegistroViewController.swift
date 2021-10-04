@@ -9,15 +9,25 @@ import UIKit
 
 class RegistroViewController: UIViewController {
 
-    @IBOutlet weak var constraintBottomScroll: NSLayoutConstraint!    
+    @IBOutlet weak var constraintBottomScroll: NSLayoutConstraint!
     
     @IBAction func clickCloseKeyboard(_ sender: Any){
         self.view.endEditing(true)
     }
     
+    @IBAction func clickBtnBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func clickBtnAcceder(_ sender: Any) {
+        //TODO
+        
+    }
+    
+    @IBAction func clickBtnRegistrame(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,7 +41,7 @@ class RegistroViewController: UIViewController {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.keyboardWillHide(_:)),
                                                name: UIResponder.keyboardWillHideNotification,
-                                               object: nil)            
+                                               object: nil)
     }
         
     override func viewDidDisappear(_ animated: Bool) {

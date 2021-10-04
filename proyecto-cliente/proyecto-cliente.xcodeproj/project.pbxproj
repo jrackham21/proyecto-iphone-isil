@@ -17,9 +17,10 @@
 		E4172AA826FDABEF003B91E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4172AA626FDABEF003B91E4 /* Main.storyboard */; };
 		E4172AAA26FDABF0003B91E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4172AA926FDABF0003B91E4 /* Assets.xcassets */; };
 		E4172AAD26FDABF0003B91E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4172AAB26FDABF0003B91E4 /* LaunchScreen.storyboard */; };
+		E49C00DC270AC04700305AF3 /* CorreoRecuperacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */; };
+		E49C00DF270AC10100305AF3 /* NuevaContrasenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00DE270AC10100305AF3 /* NuevaContrasenaViewController.swift */; };
+		E49C00E2270AC38B00305AF3 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00E1270AC38B00305AF3 /* InicioViewController.swift */; };
 		E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */; };
-		E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */; };
-		E4A8EB1327058AAC00E0BA97 /* NuevaContrasenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB1227058AAC00E0BA97 /* NuevaContrasenaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +36,10 @@
 		E4172AA926FDABF0003B91E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4172AAC26FDABF0003B91E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4172AAE26FDABF0003B91E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorreoRecuperacionViewController.swift; sourceTree = "<group>"; };
+		E49C00DE270AC10100305AF3 /* NuevaContrasenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaContrasenaViewController.swift; sourceTree = "<group>"; };
+		E49C00E1270AC38B00305AF3 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
-		E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorreoRecuperacionViewController.swift; sourceTree = "<group>"; };
-		E4A8EB1227058AAC00E0BA97 /* NuevaContrasenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaContrasenaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +80,13 @@
 				E4172AAB26FDABF0003B91E4 /* LaunchScreen.storyboard */,
 				E4172AAE26FDABF0003B91E4 /* Info.plist */,
 				E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */,
-				E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */,
-				E4A8EB1227058AAC00E0BA97 /* NuevaContrasenaViewController.swift */,
 				88142C8A2708030200406B11 /* LoginViewController.swift */,
 				88C1DFD42709E7E6008E1F5E /* SplashViewController.swift */,
 				88C1DFD72709E7FE008E1F5E /* HomeViewController.swift */,
 				88C1DFDA2709E813008E1F5E /* FelicidadesViewController.swift */,
+				E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */,
+				E49C00DE270AC10100305AF3 /* NuevaContrasenaViewController.swift */,
+				E49C00E1270AC38B00305AF3 /* InicioViewController.swift */,
 			);
 			path = "proyecto-cliente";
 			sourceTree = "<group>";
@@ -160,13 +163,14 @@
 			files = (
 				88142C8B2708030200406B11 /* LoginViewController.swift in Sources */,
 				E4172AA526FDABEF003B91E4 /* ViewController.swift in Sources */,
+				E49C00E2270AC38B00305AF3 /* InicioViewController.swift in Sources */,
 				E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */,
-				E4A8EB1327058AAC00E0BA97 /* NuevaContrasenaViewController.swift in Sources */,
 				E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */,
 				88C1DFD82709E7FE008E1F5E /* HomeViewController.swift in Sources */,
-				E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */,
 				E4172AA326FDABEF003B91E4 /* SceneDelegate.swift in Sources */,
 				88C1DFDB2709E813008E1F5E /* FelicidadesViewController.swift in Sources */,
+				E49C00DC270AC04700305AF3 /* CorreoRecuperacionViewController.swift in Sources */,
+				E49C00DF270AC10100305AF3 /* NuevaContrasenaViewController.swift in Sources */,
 				88C1DFD52709E7E6008E1F5E /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

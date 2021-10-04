@@ -16,6 +16,7 @@
 		E488BE19270957F0002E3146 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE18270957F0002E3146 /* HomeViewController.swift */; };
 		E488BE1D2709692D002E3146 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE1C2709692D002E3146 /* LoginViewController.swift */; };
 		E488BE202709711A002E3146 /* FelicidadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE1F2709711A002E3146 /* FelicidadesViewController.swift */; };
+		E49C00E5270AC7F600305AF3 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00E4270AC7F600305AF3 /* InicioViewController.swift */; };
 		E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */; };
 		E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */; };
 		E4A8EB1327058AAC00E0BA97 /* NuevaContrasenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB1227058AAC00E0BA97 /* NuevaContrasenaViewController.swift */; };
@@ -33,6 +34,7 @@
 		E488BE18270957F0002E3146 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E488BE1C2709692D002E3146 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E488BE1F2709711A002E3146 /* FelicidadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicidadesViewController.swift; sourceTree = "<group>"; };
+		E49C00E4270AC7F600305AF3 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorreoRecuperacionViewController.swift; sourceTree = "<group>"; };
 		E4A8EB1227058AAC00E0BA97 /* NuevaContrasenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaContrasenaViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				E488BE18270957F0002E3146 /* HomeViewController.swift */,
 				E488BE1C2709692D002E3146 /* LoginViewController.swift */,
 				E488BE1F2709711A002E3146 /* FelicidadesViewController.swift */,
+				E49C00E4270AC7F600305AF3 /* InicioViewController.swift */,
 			);
 			path = "proyecto-conductor";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */,
 				E4A8EB1327058AAC00E0BA97 /* NuevaContrasenaViewController.swift in Sources */,
 				E488BE19270957F0002E3146 /* HomeViewController.swift in Sources */,
+				E49C00E5270AC7F600305AF3 /* InicioViewController.swift in Sources */,
 				E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */,
 				E488BE1D2709692D002E3146 /* LoginViewController.swift in Sources */,
 				E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */,

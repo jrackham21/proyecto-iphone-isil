@@ -7,7 +7,15 @@
 import UIKit
 
 class FelicidadesViewController: UIViewController {
-
+    
+    @IBAction func clickBtnIrAHome(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func clickBtnBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
