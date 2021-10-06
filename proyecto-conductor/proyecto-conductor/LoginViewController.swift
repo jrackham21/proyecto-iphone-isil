@@ -24,6 +24,11 @@ class LoginViewController: UIViewController {
     @IBAction func tapToCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
+    
+    @IBAction func clickBtnIngresar(_ sender: Any) {
+        self.performSegue(withIdentifier: "InicioViewController", sender: nil)
+    }
+    
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -55,15 +60,10 @@ extension LoginViewController{
     
     @objc func keyboardWillShow(_ notification: Notification){
         
-        print("sube")
-                
         let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero
         let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
         let viewContentFinalPosY = self.viewContent.frame.origin.y + self.viewContent.frame.height
       
-        print(keyboardFrame.origin.y)
-        print(viewContentFinalPosY)
-        
         if keyboardFrame.origin.y < viewContentFinalPosY {
             
             UIView.animate(withDuration: animationDuration) {
@@ -74,16 +74,14 @@ extension LoginViewController{
         }
          
     }
-      
-     @objc func keyboardWillHide(_ notification: Notification){
-        print("baja")
+    
+    @objc func keyboardWillHide(_ notification: Notification){
         
-         let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
-            
-         UIView.animate(withDuration: animationDuration) {
-             self.bottomConstraint.constant = 0
-             self.view.layoutIfNeeded()
+        let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
+        
+        UIView.animate(withDuration: animationDuration) {
+            self.bottomConstraint.constant = 0
+            self.view.layoutIfNeeded()
          }
      }
-    
 }
