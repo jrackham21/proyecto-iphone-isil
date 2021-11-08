@@ -8,6 +8,7 @@ target 'proyecto-cliente' do
   # Pods for proyecto-cliente
   # add the Firebase pod for Google Analytics
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
   # or pod ‘Firebase/AnalyticsWithoutAdIdSupport’
   # for Analytics without IDFA collection capability
   
