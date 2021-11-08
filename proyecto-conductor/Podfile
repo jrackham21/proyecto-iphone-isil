@@ -8,5 +8,7 @@ target 'proyecto-conductor' do
   # Pods for proyecto-conductor
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end

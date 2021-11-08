@@ -6,16 +6,23 @@
 //
 
 import UIKit
+import FirebaseAnalytics
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
+    // MARK: - Outlets
     @IBOutlet weak var viewContent: UIView!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tfCorreo: UITextField!
+    @IBOutlet weak var tfClave: UITextField!
+    @IBOutlet weak var swichtRecordar: UISwitch!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        swichtRecordar.isOn = false
+        swichtRecordar.onTintColor = UIColor.systemIndigo
+    }
     
     @IBAction func clickBtnBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -26,10 +33,24 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func clickBtnIngresar(_ sender: Any) {
-        self.performSegue(withIdentifier: "InicioViewController", sender: nil)
+        if let email = tfCorreo.text, let password = tfClave.text{
+            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                if error == nil {
+                    UserDefaults.standard.setValue(email, forKey: "emailUserSigned")
+                    self.performSegue(withIdentifier: "InicioViewController", sender: nil)
+                }else{
+                    self.showAlertMessage(title: "Error", mensaje: error!.localizedDescription)
+                }
+            }
+        }
     }
     
-
+    fileprivate func showAlertMessage(title:String, mensaje: String) {
+        let alertController = UIAlertController(title: title, message:mensaje, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.unregisterKeyboardNotification()
