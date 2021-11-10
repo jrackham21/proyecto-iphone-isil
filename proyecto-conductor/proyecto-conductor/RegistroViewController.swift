@@ -43,35 +43,33 @@ class RegistroViewController: UIViewController {
    
     @IBAction func clickBtnRegistrame(_ sender: Any) {
         
-        if let nombres = tfNombres.text, nombres.isEmpty,
-           let apellidos = tfApellidos.text, apellidos.isEmpty,
-           let telefono = tfTelefono.text, telefono.isEmpty{
+        let nombres = tfNombres.text
+        let apellidos = tfApellidos.text
+        let telefono = tfTelefono.text
+        
+        if nombres!.isEmpty || apellidos!.isEmpty || telefono!.isEmpty{
             self.showAlertMessage(title: "Error", mensaje:"Todos los campos deben ser llenados")
-        }
-        
-        if !swichtTerm.isOn{
-            self.showAlertMessage(title: "Error", mensaje:"Debe aceptar los terminos y condiciones")            
-        }
-        
-        if tfClave.text != tfClaveConf.text {
+        }else if tfClave.text != tfClaveConf.text {
             self.showAlertMessage(title: "Error", mensaje:"Las contraseñas no coinciden")
-        }
-        
-        if let email = tfCorreo.text,
-           let password = tfClave.text,
-           let nombres = tfNombres.text,
-           let apellidos = tfApellidos.text,
-           let telefono = tfTelefono.text{
-            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                if error == nil {
-                    let alertController = UIAlertController(title: "Registro exitoso", message:"Tu cuenta se ha registrado exitosamente", preferredStyle: .alert)
-                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: { (UIAlertAction) in
-                        self.saveInDB(nombres, apellidos: apellidos, telefono: telefono, correo: email, clave: password)
-                        self.navigationController?.popViewController(animated: true)
-                    }))
-                    self.present(alertController, animated: true, completion: nil)
-                }else{
-                    self.showAlertMessage(title: "Error", mensaje: error!.localizedDescription)
+        }else if !swichtTerm.isOn{
+            self.showAlertMessage(title: "Error", mensaje:"Debe aceptar los terminos y condiciones")
+        }else{
+            if let email = tfCorreo.text,
+               let password = tfClave.text,
+               let nombres = tfNombres.text,
+               let apellidos = tfApellidos.text,
+               let telefono = tfTelefono.text{
+                Auth.auth().createUser(withEmail: email, password: password) { (result,     error) in
+                    if error == nil {
+                        let alertController = UIAlertController(title: "Registro exitoso",  message:"Tu cuenta se ha registrado exitosamente",  preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "Aceptar", style:    .default, handler: { (UIAlertAction) in
+                            self.saveInDB(nombres, apellidos: apellidos, telefono:  telefono, correo: email, clave: password)
+                            self.navigationController?.popViewController(animated: true)
+                        }))
+                        self.present(alertController, animated: true, completion: nil)
+                    }else{
+                        self.showAlertMessage(title: "Error", mensaje:  error!.localizedDescription)
+                    }
                 }
             }
         }

@@ -57,6 +57,8 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        tfCorreo.text?.removeAll()
+        tfClave.text?.removeAll()
         registerKeyboardNotification()
     }
     
