@@ -61,7 +61,6 @@ class LoginViewController: UIViewController {
         tfClave.text?.removeAll()
         registerKeyboardNotification()
     }
-    
 }
 
 extension LoginViewController{

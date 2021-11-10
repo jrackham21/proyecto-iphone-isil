@@ -10,7 +10,6 @@
 		88142C8B2708030200406B11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88142C8A2708030200406B11 /* LoginViewController.swift */; };
 		88C1DFD52709E7E6008E1F5E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1DFD42709E7E6008E1F5E /* SplashViewController.swift */; };
 		88C1DFD82709E7FE008E1F5E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1DFD72709E7FE008E1F5E /* HomeViewController.swift */; };
-		88C1DFDB2709E813008E1F5E /* FelicidadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1DFDA2709E813008E1F5E /* FelicidadesViewController.swift */; };
 		A8843D4CD91DD392DEB5C330 /* Pods_proyecto_cliente.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE02A02F4568121C8F094E4C /* Pods_proyecto_cliente.framework */; };
 		E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4172AA026FDABEF003B91E4 /* AppDelegate.swift */; };
 		E4172AA326FDABEF003B91E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4172AA226FDABEF003B91E4 /* SceneDelegate.swift */; };
@@ -21,7 +20,6 @@
 		E46077D727386BB3006574AD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46077D627386BB3006574AD /* Media.xcassets */; };
 		E4759CF42737A5F2005F1F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4759CF32737A5F2005F1F77 /* GoogleService-Info.plist */; };
 		E49C00DC270AC04700305AF3 /* CorreoRecuperacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */; };
-		E49C00DF270AC10100305AF3 /* NuevaContrasenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00DE270AC10100305AF3 /* NuevaContrasenaViewController.swift */; };
 		E49C00E2270AC38B00305AF3 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00E1270AC38B00305AF3 /* InicioViewController.swift */; };
 		E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +29,6 @@
 		88142C8A2708030200406B11 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		88C1DFD42709E7E6008E1F5E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		88C1DFD72709E7FE008E1F5E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		88C1DFDA2709E813008E1F5E /* FelicidadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicidadesViewController.swift; sourceTree = "<group>"; };
 		C6D5C551B44CB150E3363C6D /* Pods-proyecto-cliente.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyecto-cliente.debug.xcconfig"; path = "Target Support Files/Pods-proyecto-cliente/Pods-proyecto-cliente.debug.xcconfig"; sourceTree = "<group>"; };
 		DE02A02F4568121C8F094E4C /* Pods_proyecto_cliente.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyecto_cliente.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4172A9D26FDABEF003B91E4 /* proyecto-cliente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "proyecto-cliente.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +42,6 @@
 		E46077D627386BB3006574AD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		E4759CF32737A5F2005F1F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorreoRecuperacionViewController.swift; sourceTree = "<group>"; };
-		E49C00DE270AC10100305AF3 /* NuevaContrasenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaContrasenaViewController.swift; sourceTree = "<group>"; };
 		E49C00E1270AC38B00305AF3 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,9 +108,7 @@
 				88142C8A2708030200406B11 /* LoginViewController.swift */,
 				88C1DFD42709E7E6008E1F5E /* SplashViewController.swift */,
 				88C1DFD72709E7FE008E1F5E /* HomeViewController.swift */,
-				88C1DFDA2709E813008E1F5E /* FelicidadesViewController.swift */,
 				E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */,
-				E49C00DE270AC10100305AF3 /* NuevaContrasenaViewController.swift */,
 				E49C00E1270AC38B00305AF3 /* InicioViewController.swift */,
 				E46077D627386BB3006574AD /* Media.xcassets */,
 			);
@@ -244,9 +238,7 @@
 				E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */,
 				88C1DFD82709E7FE008E1F5E /* HomeViewController.swift in Sources */,
 				E4172AA326FDABEF003B91E4 /* SceneDelegate.swift in Sources */,
-				88C1DFDB2709E813008E1F5E /* FelicidadesViewController.swift in Sources */,
 				E49C00DC270AC04700305AF3 /* CorreoRecuperacionViewController.swift in Sources */,
-				E49C00DF270AC10100305AF3 /* NuevaContrasenaViewController.swift in Sources */,
 				88C1DFD52709E7E6008E1F5E /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
