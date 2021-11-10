@@ -17,10 +17,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var tfClave: UITextField!
     @IBOutlet weak var swichtRecordar: UISwitch!
     
+    private let emailKey = "emailUserSigned"
+    private let storage = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        swichtRecordar.isOn = false
         swichtRecordar.onTintColor = UIColor.systemIndigo
+        if let storedEmail = storage.string(forKey: emailKey){
+            tfCorreo.text = storedEmail
+            swichtRecordar.isOn = true
+        }else{
+            swichtRecordar.isOn = false
+        }
     }
     
     @IBAction func clickBtnBack(_ sender: Any) {
@@ -35,7 +43,11 @@ class LoginViewController: UIViewController {
         if let email = tfCorreo.text, let password = tfClave.text{
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                 if error == nil {
-                    UserDefaults.standard.setValue(email, forKey: "emailUserSigned")
+                    if self.swichtRecordar.isOn {
+                        self.storage.setValue(email, forKey: "emailUserSigned")
+                    }else{
+                        self.storage.removeObject(forKey: self.emailKey)
+                    }
                     self.performSegue(withIdentifier: "InicioViewController", sender: nil)
                 }else{
                     self.showAlertMessage(title: "Error", mensaje: error!.localizedDescription)
@@ -52,12 +64,14 @@ class LoginViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        if !swichtRecordar.isOn {
+            tfCorreo.text?.removeAll()
+        }
+        tfClave.text?.removeAll()
         self.unregisterKeyboardNotification()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        tfCorreo.text?.removeAll()
-        tfClave.text?.removeAll()
         registerKeyboardNotification()
     }    
 }
