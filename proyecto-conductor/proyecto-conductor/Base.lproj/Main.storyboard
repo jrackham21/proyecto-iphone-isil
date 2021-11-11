@@ -313,6 +313,14 @@
                                             <constraint firstAttribute="width" constant="206.5" id="NxA-yk-7cW"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUU-gA-u9a">
+                                        <rect key="frame" x="275" y="257" width="78" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cargar foto"/>
+                                        <connections>
+                                            <action selector="abrirFile:" destination="UPv-En-GeE" eventType="touchUpInside" id="eeh-Nq-e6n"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -367,6 +375,7 @@
                     <navigationItem key="navigationItem" id="MW2-yw-WAU"/>
                     <connections>
                         <outlet property="constraintBottomScroll" destination="ohf-1X-J6X" id="w8Y-EB-7ux"/>
+                        <outlet property="imgPerfil" destination="leo-fX-dEG" id="DOb-F1-gGD"/>
                         <outlet property="swichtTerm" destination="LJ7-Ji-3aa" id="dSF-oh-zgo"/>
                         <outlet property="tfApellidos" destination="PRf-kZ-Wkl" id="5yK-Rf-NNc"/>
                         <outlet property="tfClave" destination="B3C-kN-br7" id="zvc-Df-hTn"/>
@@ -383,7 +392,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1800" y="1284"/>
+            <point key="canvasLocation" x="3730" y="588"/>
         </scene>
         <!--Correo Recuperacion View Controller-->
         <scene sceneID="bvV-Nj-iTL">
@@ -485,7 +494,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1000" y="1981"/>
+            <point key="canvasLocation" x="4732" y="78"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="z5U-UI-Zzl">
@@ -665,7 +674,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1000.0000000000001" y="859.82142857142856"/>
+            <point key="canvasLocation" x="2614" y="78"/>
         </scene>
         <!--Inicio View Controller-->
         <scene sceneID="9BL-mo-nyM">
@@ -675,8 +684,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're in the jungle, baby" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRb-ZL-jhh">
-                                <rect key="frame" x="27.5" y="430" width="359" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRb-ZL-jhh">
+                                <rect key="frame" x="141" y="430" width="132" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -707,7 +716,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ep8-cg-3op" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2629" y="860"/>
+            <point key="canvasLocation" x="3729" y="-309"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zgq-zF-DNY">

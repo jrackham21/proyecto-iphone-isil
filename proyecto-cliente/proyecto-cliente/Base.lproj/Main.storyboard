@@ -321,6 +321,14 @@
                                             <action selector="clickBtnBack:" destination="9Is-Rb-j0i" eventType="touchUpInside" id="ZCW-5s-qZo"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWF-pC-Jvy">
+                                        <rect key="frame" x="275" y="257" width="78" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cargar foto"/>
+                                        <connections>
+                                            <action selector="abrirFile:" destination="UPv-En-GeE" eventType="touchUpInside" id="bsA-ZG-fm7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -367,6 +375,7 @@
                     <navigationItem key="navigationItem" id="MW2-yw-WAU"/>
                     <connections>
                         <outlet property="constraintBottomScroll" destination="ohf-1X-J6X" id="w8Y-EB-7ux"/>
+                        <outlet property="imgPerfil" destination="leo-fX-dEG" id="Yjw-2B-9C5"/>
                         <outlet property="swichtTerm" destination="LJ7-Ji-3aa" id="bsj-zB-lDG"/>
                         <outlet property="tfApellidos" destination="PRf-kZ-Wkl" id="oSU-9l-NXj"/>
                         <outlet property="tfClave" destination="B3C-kN-br7" id="SOv-zy-b4E"/>

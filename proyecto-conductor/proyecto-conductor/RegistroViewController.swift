@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAnalytics
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseStorage
 
 class RegistroViewController: UIViewController {
     // MARK: - Outlets
@@ -20,6 +21,9 @@ class RegistroViewController: UIViewController {
     @IBOutlet weak var tfClave: UITextField!
     @IBOutlet weak var tfClaveConf: UITextField!
     @IBOutlet weak var swichtTerm: UISwitch!
+    @IBOutlet weak var imgPerfil: UIImageView!
+    
+    private var imagePicker: UIImagePickerController?
     
     private let db = Firestore.firestore()
     
@@ -38,7 +42,7 @@ class RegistroViewController: UIViewController {
     }
     @IBAction func clickBtnAcceder(_ sender: Any) {
         //TODO
-        
+        self.navigationController?.popViewController(animated: true)
     }
    
     @IBAction func clickBtnRegistrame(_ sender: Any) {
@@ -61,6 +65,7 @@ class RegistroViewController: UIViewController {
                let telefono = tfTelefono.text{
                 Auth.auth().createUser(withEmail: email, password: password) { (result,     error) in
                     if error == nil {
+                        self.subirFotoAFirebase()
                         let alertController = UIAlertController(title: "Registro exitoso",  message:"Tu cuenta se ha registrado exitosamente",  preferredStyle: .alert)
                         alertController.addAction(UIAlertAction(title: "Aceptar", style:    .default, handler: { (UIAlertAction) in
                             self.saveInDB(nombres, apellidos: apellidos, telefono:  telefono, correo: email, clave: password)
@@ -73,6 +78,40 @@ class RegistroViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @IBAction func abrirFile(_ sender: Any) {
+        cargarImagen()
+    }
+    
+    func subirFotoAFirebase(){
+        guard let imageSaved = imgPerfil.image,
+              let imageSavedData = imageSaved.jpegData(compressionQuality: 0.1) else {
+                        
+            return
+        }
+        
+        let metaDataConfig = StorageMetadata()
+        metaDataConfig.contentType = "image/jpg"
+        
+        let storage = Storage.storage()
+        
+        let imageName = Int.random(in: 100...1000)
+        
+        let folderReference = storage.reference(withPath: "fotos-conductores/\(imageName).jpg")
+        
+        DispatchQueue.global(qos: .background).async {
+            folderReference.putData(imageSavedData, metadata: metaDataConfig) { (metaData: StorageMetadata?, error:Error?) in
+                DispatchQueue.main.async {
+                    if let error = error {
+                        self.showAlertMessage(title: "Error al cargar foto", mensaje: error.localizedDescription)
+                        
+                        return
+                    }
+                }
+            }
+        }
+        
     }
     
     func saveInDB(_ nombres:String, apellidos:String, telefono:String, correo:String, clave:String) {
@@ -88,6 +127,18 @@ class RegistroViewController: UIViewController {
         let alertController = UIAlertController(title: title, message:mensaje, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func cargarImagen() {
+        imagePicker = UIImagePickerController()
+        imagePicker?.sourceType = .photoLibrary
+        imagePicker?.allowsEditing = true
+        imagePicker?.delegate = self
+        
+        guard let imagePicker = imagePicker else {
+            return
+        }
+        present(imagePicker, animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -130,4 +181,17 @@ class RegistroViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
+}
+
+extension RegistroViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+
+        imagePicker?.dismiss(animated: true, completion: nil)
+        
+        if info.keys.contains(.originalImage){
+            self.imgPerfil.image = info[.originalImage] as? UIImage
+        }
+    }
+    
 }
