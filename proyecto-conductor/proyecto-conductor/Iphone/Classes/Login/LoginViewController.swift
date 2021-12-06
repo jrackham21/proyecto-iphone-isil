@@ -32,10 +32,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func clickBtnBack(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
     @IBAction func tapToCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }

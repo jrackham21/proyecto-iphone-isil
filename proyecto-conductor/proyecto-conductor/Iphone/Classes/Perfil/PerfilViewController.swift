@@ -1,20 +1,29 @@
 //
-//  InicioViewController.swift
+//  PerfilViewController.swift
 //  proyecto-conductor
 //
-//  Created by Jack Rackham on 10/4/21.
+//  Created by Jack Rackham on 12/5/21.
 //
 
 import UIKit
 import FirebaseAuth
 
-class InicioViewController: UIViewController {
+class PerfilViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var lbMensaje: UILabel!
+    @IBOutlet weak var lblNombreCompleto: UILabel!
+    @IBOutlet weak var lblTelefono: UILabel!
+    @IBOutlet weak var lblCorreo: UILabel!
+    @IBOutlet weak var imgPerfil: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    
+    // MARK: - Actions
+    @IBAction func goToEditPerfil(_ sender:Any){
+        self.performSegue(withIdentifier: "EditarPerfilViewController", sender: nil)
     }
     
     @IBAction func clickCerrarSesion(_ sender: Any) {

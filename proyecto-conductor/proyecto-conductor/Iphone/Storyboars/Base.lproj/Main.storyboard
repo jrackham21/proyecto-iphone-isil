@@ -175,7 +175,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil" translatesAutoresizingMaskIntoConstraints="NO" id="leo-fX-dEG">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil" translatesAutoresizingMaskIntoConstraints="NO" id="leo-fX-dEG">
                                         <rect key="frame" x="147" y="165.5" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <constraints>
@@ -356,7 +356,6 @@
                                 <rect key="frame" x="20" y="44" width="12.5" height="22"/>
                                 <state key="normal" image="chevron.backward" catalog="system"/>
                                 <connections>
-                                    <action selector="clickBtnBack:" destination="9Is-Rb-j0i" eventType="touchUpInside" id="9Ex-Uq-ebt"/>
                                     <action selector="clickBtnBack:" destination="UPv-En-GeE" eventType="touchUpInside" id="BXc-Jp-qWq"/>
                                 </connections>
                             </button>
@@ -449,7 +448,6 @@
                                 <state key="normal" image="chevron.backward" catalog="system"/>
                                 <connections>
                                     <action selector="clickBtnBack:" destination="QIF-Jj-HUI" eventType="touchUpInside" id="CIy-5c-RMC"/>
-                                    <action selector="clickBtnBack:" destination="9Is-Rb-j0i" eventType="touchUpInside" id="b4q-35-ecb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -616,13 +614,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7I-RQ-waP">
-                                <rect key="frame" x="15" y="44" width="12.5" height="22"/>
-                                <state key="normal" image="chevron.backward" catalog="system"/>
-                                <connections>
-                                    <action selector="clickBtnBack:" destination="9Is-Rb-j0i" eventType="touchUpInside" id="td1-g7-Wu6"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa tus datos ipara acceder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBW-wL-ISD">
                                 <rect key="frame" x="109" y="166.5" width="196" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="15"/>
@@ -635,7 +626,6 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="DQS-OF-hXh" firstAttribute="leading" secondItem="gPB-Su-3Gh" secondAttribute="leading" constant="20" id="0YO-sq-V3U"/>
-                            <constraint firstItem="Q7I-RQ-waP" firstAttribute="top" secondItem="gPB-Su-3Gh" secondAttribute="top" id="73z-0Y-evm"/>
                             <constraint firstItem="DQS-OF-hXh" firstAttribute="top" secondItem="dj0-W1-TGQ" secondAttribute="bottom" constant="5" id="CBA-ia-ISo"/>
                             <constraint firstItem="gZr-ck-368" firstAttribute="width" secondItem="dj0-W1-TGQ" secondAttribute="width" multiplier="0.877604" id="E75-WB-WWf"/>
                             <constraint firstItem="gZr-ck-368" firstAttribute="top" secondItem="DQS-OF-hXh" secondAttribute="bottom" constant="15" id="FHk-45-5cs"/>
@@ -647,7 +637,6 @@
                             <constraint firstItem="dBW-wL-ISD" firstAttribute="top" secondItem="gUp-ds-02t" secondAttribute="bottom" id="YYv-Gy-rRc"/>
                             <constraint firstItem="kbX-w1-xMg" firstAttribute="top" secondItem="gZr-ck-368" secondAttribute="bottom" constant="5" id="Zau-qO-0hn"/>
                             <constraint firstItem="dj0-W1-TGQ" firstAttribute="centerY" secondItem="otJ-M9-Um0" secondAttribute="centerY" multiplier="1.2" constant="1" id="hYL-az-Nah"/>
-                            <constraint firstItem="Q7I-RQ-waP" firstAttribute="leading" secondItem="gPB-Su-3Gh" secondAttribute="leading" constant="15" id="ms1-J5-mmL"/>
                             <constraint firstItem="jBM-hq-FCO" firstAttribute="top" secondItem="gPB-Su-3Gh" secondAttribute="top" constant="20" id="qrV-cS-K95"/>
                             <constraint firstItem="gUp-ds-02t" firstAttribute="top" secondItem="jBM-hq-FCO" secondAttribute="bottom" id="tas-gQ-yCV"/>
                             <constraint firstItem="gPB-Su-3Gh" firstAttribute="trailing" secondItem="dj0-W1-TGQ" secondAttribute="trailing" constant="15" id="xHT-pZ-0GB"/>
