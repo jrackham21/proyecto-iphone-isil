@@ -40,6 +40,7 @@ class RegistroViewController: UIViewController {
     @IBAction func clickBtnBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func clickBtnAcceder(_ sender: Any) {
         //TODO
         self.navigationController?.popViewController(animated: true)

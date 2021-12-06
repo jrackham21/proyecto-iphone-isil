@@ -21,6 +21,8 @@
 		E49C00E5270AC7F600305AF3 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00E4270AC7F600305AF3 /* InicioViewController.swift */; };
 		E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */; };
 		E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */; };
+		E4B66485275D80E100A23562 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B66484275D80E100A23562 /* TabBar.storyboard */; };
+		E4B66488275D822A00A23562 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B66487275D822A00A23562 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		E49C00E4270AC7F600305AF3 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorreoRecuperacionViewController.swift; sourceTree = "<group>"; };
+		E4B66484275D80E100A23562 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		E4B66487275D822A00A23562 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,20 +90,17 @@
 		E4172A9F26FDABEF003B91E4 /* proyecto-conductor */ = {
 			isa = PBXGroup;
 			children = (
+				E4B6647B275D7AD400A23562 /* General */,
+				E4B66477275D7A6300A23562 /* Iphone */,
+				E4B6647A275D7AC700A23562 /* DTO */,
+				E4B66478275D7A8100A23562 /* Entities */,
+				E4B66479275D7A9F00A23562 /* WebServices */,
 				E4759CE32737A28C005F1F77 /* GoogleService-Info.plist */,
 				E4172AA026FDABEF003B91E4 /* AppDelegate.swift */,
 				E4172AA226FDABEF003B91E4 /* SceneDelegate.swift */,
-				E4172AA626FDABEF003B91E4 /* Main.storyboard */,
 				E4172AA926FDABF0003B91E4 /* Assets.xcassets */,
 				E4172AAB26FDABF0003B91E4 /* LaunchScreen.storyboard */,
 				E4172AAE26FDABF0003B91E4 /* Info.plist */,
-				E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */,
-				E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */,
-				E488BE1527095651002E3146 /* SplashViewController.swift */,
-				E488BE18270957F0002E3146 /* HomeViewController.swift */,
-				E488BE1C2709692D002E3146 /* LoginViewController.swift */,
-				E49C00E4270AC7F600305AF3 /* InicioViewController.swift */,
-				E44110AE273865C100476F09 /* Media.xcassets */,
 			);
 			path = "proyecto-conductor";
 			sourceTree = "<group>";
@@ -110,6 +111,107 @@
 				1F43CA058A4729F12FAB7FCD /* Pods_proyecto_conductor.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4B66477275D7A6300A23562 /* Iphone */ = {
+			isa = PBXGroup;
+			children = (
+				E4B6647E275D7BC200A23562 /* Resources */,
+				E4B6647D275D7BAD00A23562 /* Storyboars */,
+				E4B6647C275D7B8000A23562 /* Classes */,
+			);
+			path = Iphone;
+			sourceTree = "<group>";
+		};
+		E4B66478275D7A8100A23562 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E4B66479275D7A9F00A23562 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		E4B6647A275D7AC700A23562 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		E4B6647B275D7AD400A23562 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				E4B66482275D7E4100A23562 /* Login */,
+				E4B66487275D822A00A23562 /* TabBarViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		E4B6647C275D7B8000A23562 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E4B66481275D7D2800A23562 /* Adapters */,
+				E4B66480275D7D0200A23562 /* Servicio */,
+				E4B6647F275D7C7300A23562 /* Conductor */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E4B6647D275D7BAD00A23562 /* Storyboars */ = {
+			isa = PBXGroup;
+			children = (
+				E4172AA626FDABEF003B91E4 /* Main.storyboard */,
+				E4B66484275D80E100A23562 /* TabBar.storyboard */,
+			);
+			path = Storyboars;
+			sourceTree = "<group>";
+		};
+		E4B6647E275D7BC200A23562 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E44110AE273865C100476F09 /* Media.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4B6647F275D7C7300A23562 /* Conductor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Conductor;
+			sourceTree = "<group>";
+		};
+		E4B66480275D7D0200A23562 /* Servicio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Servicio;
+			sourceTree = "<group>";
+		};
+		E4B66481275D7D2800A23562 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		E4B66482275D7E4100A23562 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */,
+				E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */,
+				E488BE1527095651002E3146 /* SplashViewController.swift */,
+				E488BE18270957F0002E3146 /* HomeViewController.swift */,
+				E488BE1C2709692D002E3146 /* LoginViewController.swift */,
+				E49C00E4270AC7F600305AF3 /* InicioViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +277,7 @@
 				E44110AF273865C100476F09 /* Media.xcassets in Resources */,
 				E4172AAA26FDABF0003B91E4 /* Assets.xcassets in Resources */,
 				E4172AA826FDABEF003B91E4 /* Main.storyboard in Resources */,
+				E4B66485275D80E100A23562 /* TabBar.storyboard in Resources */,
 				E4759CE42737A28C005F1F77 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +335,7 @@
 				E488BE19270957F0002E3146 /* HomeViewController.swift in Sources */,
 				E49C00E5270AC7F600305AF3 /* InicioViewController.swift in Sources */,
 				E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */,
+				E4B66488275D822A00A23562 /* TabBarViewController.swift in Sources */,
 				E488BE1D2709692D002E3146 /* LoginViewController.swift in Sources */,
 				E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */,
 				E488BE1627095651002E3146 /* SplashViewController.swift in Sources */,

@@ -664,7 +664,7 @@
                         <outlet property="tfClave" destination="6oN-yD-b5T" id="qEH-35-fSj"/>
                         <outlet property="tfCorreo" destination="0cF-PS-GJm" id="XMO-ii-Mol"/>
                         <outlet property="viewContent" destination="dj0-W1-TGQ" id="O3x-IP-2sp"/>
-                        <segue destination="6u3-sE-10A" kind="show" identifier="InicioViewController" id="1l5-Ms-kSj"/>
+                        <segue destination="e8i-Fr-MPH" kind="show" identifier="TabBarViewController" id="wiK-Cn-hay"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ehd-46-SeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -676,47 +676,15 @@
             </objects>
             <point key="canvasLocation" x="2614" y="78"/>
         </scene>
-        <!--Inicio View Controller-->
-        <scene sceneID="9BL-mo-nyM">
+        <!--TabBar-->
+        <scene sceneID="oNG-MG-nir">
             <objects>
-                <viewController id="6u3-sE-10A" customClass="InicioViewController" customModule="proyecto_conductor" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hvb-II-xKk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRb-ZL-jhh">
-                                <rect key="frame" x="141" y="430" width="132" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGU-N8-Z39">
-                                <rect key="frame" x="24" y="487" width="366" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Cerrar Sesion"/>
-                                <connections>
-                                    <action selector="clickCerrarSesion:" destination="6u3-sE-10A" eventType="touchUpInside" id="9qj-eK-6Hf"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="3vj-oE-LY2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="QGU-N8-Z39" firstAttribute="leading" secondItem="3vj-oE-LY2" secondAttribute="leading" constant="24" id="7ey-Oq-Mbl"/>
-                            <constraint firstItem="iRb-ZL-jhh" firstAttribute="centerX" secondItem="Hvb-II-xKk" secondAttribute="centerX" id="Yjh-K9-c71"/>
-                            <constraint firstItem="QGU-N8-Z39" firstAttribute="top" secondItem="iRb-ZL-jhh" secondAttribute="bottom" constant="21" id="e8F-cC-HXD"/>
-                            <constraint firstItem="3vj-oE-LY2" firstAttribute="trailing" secondItem="QGU-N8-Z39" secondAttribute="trailing" constant="24" id="hUC-Cd-oip"/>
-                            <constraint firstItem="iRb-ZL-jhh" firstAttribute="centerY" secondItem="Hvb-II-xKk" secondAttribute="centerY" id="wp6-gs-Aab"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="XHR-It-85D"/>
-                    <connections>
-                        <outlet property="lbMensaje" destination="iRb-ZL-jhh" id="TXs-8Q-gf3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ep8-cg-3op" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="TabBar" id="e8i-Fr-MPH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GuF-TT-F9O"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdp-XQ-OIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3729" y="-309"/>
+            <point key="canvasLocation" x="3730" y="-226"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zgq-zF-DNY">
