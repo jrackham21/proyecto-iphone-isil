@@ -13,4 +13,6 @@ target 'proyecto-cliente' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   
+  pod 'Alamofire'
+  
 end

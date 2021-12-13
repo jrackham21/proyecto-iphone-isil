@@ -48,7 +48,7 @@ class LoginViewController: UIViewController {
                     }else{
                         self.storage.removeObject(forKey: self.emailKey)
                     }
-                    self.performSegue(withIdentifier: "InicioViewController", sender: nil)
+                    self.performSegue(withIdentifier: "TabBarViewController", sender: nil)
                 }else{
                     self.showAlertMessage(title: "Error", mensaje: error!.localizedDescription)
                 }

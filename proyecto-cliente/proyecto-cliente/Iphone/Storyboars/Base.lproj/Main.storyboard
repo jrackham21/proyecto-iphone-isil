@@ -392,51 +392,17 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1848" y="1282"/>
+            <point key="canvasLocation" x="3858" y="574"/>
         </scene>
-        <!--Inicio View Controller-->
-        <scene sceneID="Ibj-L6-1R3">
+        <!--TabBar-->
+        <scene sceneID="kVo-77-vyY">
             <objects>
-                <viewController id="aas-Ar-2M8" customClass="InicioViewController" customModule="proyecto_cliente" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jhy-bi-dFr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-32-8mH">
-                                <rect key="frame" x="127.5" y="430" width="159" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie8-Gt-SZC">
-                                <rect key="frame" x="127.5" y="486" width="159" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Cerrar Sesion"/>
-                                <connections>
-                                    <action selector="clickBtnCerrarSesion:" destination="aas-Ar-2M8" eventType="touchUpInside" id="Eg8-64-3Gi"/>
-                                    <action selector="clickBtnCerrarSesion:" destination="hYT-VO-Hl4" eventType="touchUpInside" id="wIe-Xv-SuM"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="pMM-Ug-mpx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ie8-Gt-SZC" firstAttribute="leading" secondItem="hvb-32-8mH" secondAttribute="leading" id="0wN-8o-N7s"/>
-                            <constraint firstItem="ie8-Gt-SZC" firstAttribute="trailing" secondItem="hvb-32-8mH" secondAttribute="trailing" id="QFU-es-6K4"/>
-                            <constraint firstItem="hvb-32-8mH" firstAttribute="centerX" secondItem="jhy-bi-dFr" secondAttribute="centerX" id="jqC-PR-s7W"/>
-                            <constraint firstItem="ie8-Gt-SZC" firstAttribute="top" secondItem="hvb-32-8mH" secondAttribute="bottom" constant="20" id="lAc-bo-73R"/>
-                            <constraint firstItem="hvb-32-8mH" firstAttribute="centerY" secondItem="jhy-bi-dFr" secondAttribute="centerY" id="sKG-PK-Y7N"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="9Fd-Ws-dvx"/>
-                    <connections>
-                        <outlet property="lbMensaje" destination="hvb-32-8mH" id="xbx-DG-j2L"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Va7-3X-GMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="hYT-VO-Hl4" userLabel="Exit" sceneMemberID="exit"/>
+                <viewControllerPlaceholder storyboardName="TabBar" id="zpY-nd-2NZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="V6C-TS-3m2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PfR-1m-dYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2635" y="860"/>
+            <point key="canvasLocation" x="3859" y="-159"/>
         </scene>
         <!--Correo Recuperacion View Controller-->
         <scene sceneID="bvV-Nj-iTL">
@@ -537,7 +503,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1058" y="1979"/>
+            <point key="canvasLocation" x="4845" y="78"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="z5U-UI-Zzl">
@@ -709,7 +675,7 @@
                         <outlet property="tfClave" destination="6oN-yD-b5T" id="3Ka-vk-hGU"/>
                         <outlet property="tfCorreo" destination="0cF-PS-GJm" id="eXT-0U-4JH"/>
                         <outlet property="viewContent" destination="dj0-W1-TGQ" id="6On-O4-fwG"/>
-                        <segue destination="aas-Ar-2M8" kind="show" identifier="InicioViewController" id="cED-Ag-fvt"/>
+                        <segue destination="zpY-nd-2NZ" kind="show" identifier="TabBarViewController" id="T5D-r5-qsl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ehd-46-SeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -720,7 +686,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1058" y="860"/>
+            <point key="canvasLocation" x="2726" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zgq-zF-DNY">
