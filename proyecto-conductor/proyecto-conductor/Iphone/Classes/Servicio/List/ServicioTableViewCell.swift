@@ -7,9 +7,11 @@
 
 import UIKit
 
-class ServicioTableViewCell: UITableViewCell{
+class ServicioTableViewCell: UITableViewCell{    
     
-    
+    @IBOutlet private weak var lblLugarRecojo: UILabel!
+    @IBOutlet private weak var lblLugarDestino: UILabel!
+    @IBOutlet private weak var lblHoraRecojo: UILabel!
     
     
     

@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ServicioTableViewCell" id="Pzf-On-ePU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ServicioTableViewCell" id="Pzf-On-ePU" customClass="ServicioTableViewCell" customModule="proyecto_conductor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="171.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pzf-On-ePU" id="g7s-hg-wtF">
@@ -164,8 +164,17 @@
                                                 <constraint firstItem="xCq-PP-2T8" firstAttribute="leading" secondItem="g7s-hg-wtF" secondAttribute="leading" constant="15" id="pQ4-9N-4cZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblHoraRecojo" destination="VGe-XM-ojp" id="6P7-hR-pus"/>
+                                            <outlet property="lblLugarDestino" destination="OAD-vH-bTG" id="ktY-tc-GCM"/>
+                                            <outlet property="lblLugarRecojo" destination="BwI-2I-Td4" id="0hq-t0-A0O"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5Ol-43-TTk" id="dJl-UF-phH"/>
+                                    <outlet property="delegate" destination="5Ol-43-TTk" id="sWo-Yx-ebX"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U1O-s0-iB6"/>
@@ -183,12 +192,6 @@
                     <tabBarItem key="tabBarItem" title="Por Ejecutar" image="car" catalog="system" selectedImage="car.fill" id="zQO-rf-Lim"/>
                     <navigationItem key="navigationItem" id="p8r-6K-OZa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="lblHoraRecojo" destination="VGe-XM-ojp" id="mVg-7H-Trd"/>
-                        <outlet property="lblLugarDestino" destination="OAD-vH-bTG" id="W0J-fT-1Yl"/>
-                        <outlet property="lblLugarRecojo" destination="BwI-2I-Td4" id="hnn-PU-CAT"/>
-                        <outlet property="tblServicios" destination="4Y6-W0-Rl5" id="JBz-BS-2Pz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ9-Pc-GiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
