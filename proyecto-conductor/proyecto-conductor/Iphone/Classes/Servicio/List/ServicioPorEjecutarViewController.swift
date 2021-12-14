@@ -12,21 +12,21 @@ class ServicioPorEjecutarViewController: UIViewController {
     
     @IBOutlet private weak var tblServicios: UITableView!
     
-    
+    var arrayServicios = ["sdaf", "234", "vdf", "sadf", "fq3t5", "fd34vd"]
 }
 
-extension ServicioPorEjecutarViewController: UITableViewDataSource{
-    
+extension ServicioPorEjecutarViewController: UITableViewDataSource{    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return arrayServicios.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ServicioTableViewCell", for: indexPath)
-        return cell
-        
+        let objServicio = self.arrayServicios[indexPath.row]
+        return ServicioTableViewCell.createInTableView(tableView, indexPath: indexPath, objServicio: objServicio)
     }
-    
+}
+
+extension ServicioPorEjecutarViewController: UITableViewDelegate{
     
 }

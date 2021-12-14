@@ -192,6 +192,9 @@
                     <tabBarItem key="tabBarItem" title="Por Ejecutar" image="car" catalog="system" selectedImage="car.fill" id="zQO-rf-Lim"/>
                     <navigationItem key="navigationItem" id="p8r-6K-OZa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tblServicios" destination="4Y6-W0-Rl5" id="jaG-S2-vDW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ9-Pc-GiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
