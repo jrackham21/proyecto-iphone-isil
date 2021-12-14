@@ -131,14 +131,14 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Ju3-Ts-FXA">
                                                             <rect key="frame" x="323" y="41.5" width="61" height="89"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W84-DL-4VG">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W84-DL-4VG">
                                                                     <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                     <state key="normal" title="Finalizar">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5X-7W-TWl">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5X-7W-TWl">
                                                                     <rect key="frame" x="0.0" y="59" width="61" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                     <state key="normal" title="Cancelar">
@@ -183,6 +183,12 @@
                     <tabBarItem key="tabBarItem" title="Por Ejecutar" image="car" catalog="system" selectedImage="car.fill" id="zQO-rf-Lim"/>
                     <navigationItem key="navigationItem" id="p8r-6K-OZa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lblHoraRecojo" destination="VGe-XM-ojp" id="mVg-7H-Trd"/>
+                        <outlet property="lblLugarDestino" destination="OAD-vH-bTG" id="W0J-fT-1Yl"/>
+                        <outlet property="lblLugarRecojo" destination="BwI-2I-Td4" id="hnn-PU-CAT"/>
+                        <outlet property="tblServicios" destination="4Y6-W0-Rl5" id="JBz-BS-2Pz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ9-Pc-GiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
