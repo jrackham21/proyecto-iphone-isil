@@ -11,7 +11,7 @@
         <!--Item-->
         <scene sceneID="Sa6-Fn-PAx">
             <objects>
-                <viewController id="2LD-kr-Nis" customClass="PerfilViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="2LD-kr-Nis" customClass="PerfilViewController" customModule="proyecto_cliente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZMY-Q5-ear">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,10 +19,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOy-pG-rEg">
                                 <rect key="frame" x="160" y="407" width="94" height="30"/>
                                 <state key="normal" title="Cerrar Sesión"/>
+                                <connections>
+                                    <action selector="clickCerrarSesion:" destination="2LD-kr-Nis" eventType="touchUpInside" id="irN-C7-YoI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGL-G2-4EU">
                                 <rect key="frame" x="187" y="372" width="40" height="30"/>
                                 <state key="normal" title="Editar"/>
+                                <connections>
+                                    <action selector="goToEditPerfil:" destination="2LD-kr-Nis" eventType="touchUpInside" id="atT-KW-x32"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblNombreCompleto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1q-et-cFi">
                                 <rect key="frame" x="20" y="269" width="374" height="20.5"/>
@@ -74,6 +80,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="person.fill" catalog="system" id="SjZ-62-qac"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imgPerfil" destination="KJw-8F-MfG" id="4ld-JO-dCX"/>
+                        <outlet property="lblCorreo" destination="2xt-Jm-aJP" id="PQM-rA-6qg"/>
+                        <outlet property="lblNombreCompleto" destination="z1q-et-cFi" id="fkM-K8-yeY"/>
+                        <outlet property="lblTelefono" destination="4nh-TE-ISP" id="0Ux-Xt-9tS"/>
+                        <segue destination="Xmw-Lh-cPp" kind="show" identifier="EditarPerfilViewController" id="JKA-dK-Xxg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q56-Nn-JiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +95,7 @@
         <!--Editar Perfil View Controller-->
         <scene sceneID="Cpg-UV-mjM">
             <objects>
-                <viewController id="Xmw-Lh-cPp" customClass="EditarPerfilViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Xmw-Lh-cPp" customClass="EditarPerfilViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vDm-a5-H4f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +128,9 @@
                                         <state key="normal" title="Tomar Foto">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tomarFoto:" destination="Xmw-Lh-cPp" eventType="touchUpInside" id="nnI-AF-BYp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIl-Uf-T2b">
                                         <rect key="frame" x="93" y="0.0" width="71" height="30"/>
@@ -122,6 +138,9 @@
                                         <state key="normal" title="Subir Foto">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="subirFoto:" destination="Xmw-Lh-cPp" eventType="touchUpInside" id="7U6-Ql-LYf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -131,6 +150,9 @@
                                 <state key="normal" title="Guardar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="guardar:" destination="Xmw-Lh-cPp" eventType="touchUpInside" id="OcN-Fd-DnZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VJm-i9-S22"/>
@@ -151,6 +173,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jgm-bt-KcI"/>
+                    <connections>
+                        <outlet property="imgPerfil" destination="c5r-z9-TSS" id="Zq8-SH-adV"/>
+                        <outlet property="tfTelefono" destination="AY7-YD-4lX" id="tq6-x1-8Y5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3z-D6-1Xz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

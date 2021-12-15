@@ -28,6 +28,10 @@
 		E46077D727386BB3006574AD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46077D627386BB3006574AD /* Media.xcassets */; };
 		E47378A32766DF7700EB20B6 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47378A22766DF7700EB20B6 /* TabBar.storyboard */; };
 		E4759CF42737A5F2005F1F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4759CF32737A5F2005F1F77 /* GoogleService-Info.plist */; };
+		E490DE55276A169E00F96515 /* ServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490DE54276A169E00F96515 /* ServiciosViewController.swift */; };
+		E490DE58276A171200F96515 /* ServicioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490DE57276A171200F96515 /* ServicioTableViewCell.swift */; };
+		E490DE5B276A178800F96515 /* SolicitudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490DE5A276A178800F96515 /* SolicitudViewController.swift */; };
+		E490DE5E276A17BD00F96515 /* SolicitudTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490DE5D276A17BD00F96515 /* SolicitudTableViewCell.swift */; };
 		E49C00DC270AC04700305AF3 /* CorreoRecuperacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */; };
 		E49C00E2270AC38B00305AF3 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C00E1270AC38B00305AF3 /* InicioViewController.swift */; };
 		E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */; };
@@ -59,6 +63,10 @@
 		E46077D627386BB3006574AD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		E47378A22766DF7700EB20B6 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		E4759CF32737A5F2005F1F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E490DE54276A169E00F96515 /* ServiciosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosViewController.swift; sourceTree = "<group>"; };
+		E490DE57276A171200F96515 /* ServicioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicioTableViewCell.swift; sourceTree = "<group>"; };
+		E490DE5A276A178800F96515 /* SolicitudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitudViewController.swift; sourceTree = "<group>"; };
+		E490DE5D276A17BD00F96515 /* SolicitudTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitudTableViewCell.swift; sourceTree = "<group>"; };
 		E49C00DB270AC04700305AF3 /* CorreoRecuperacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorreoRecuperacionViewController.swift; sourceTree = "<group>"; };
 		E49C00E1270AC38B00305AF3 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +249,10 @@
 		E47378A02766DD2800EB20B6 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				E490DE54276A169E00F96515 /* ServiciosViewController.swift */,
+				E490DE57276A171200F96515 /* ServicioTableViewCell.swift */,
+				E490DE5A276A178800F96515 /* SolicitudViewController.swift */,
+				E490DE5D276A17BD00F96515 /* SolicitudTableViewCell.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -266,6 +278,7 @@
 				E4172A9A26FDABEF003B91E4 /* Frameworks */,
 				E4172A9B26FDABEF003B91E4 /* Resources */,
 				B7937BC169D1E9CC108A0933 /* [CP] Embed Pods Frameworks */,
+				ECED594E066658AE1D3617B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,6 +359,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-proyecto-cliente/Pods-proyecto-cliente-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ECED594E066658AE1D3617B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-proyecto-cliente/Pods-proyecto-cliente-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-proyecto-cliente/Pods-proyecto-cliente-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-proyecto-cliente/Pods-proyecto-cliente-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FAC787443ADCDE3D69931E12 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,12 +409,16 @@
 				E4172AA526FDABEF003B91E4 /* ViewController.swift in Sources */,
 				889E4962276A08EA009E88FC /* SolicitudDetailViewController.swift in Sources */,
 				88C03229276721C6006B6E22 /* EditarPerfilViewController.swift in Sources */,
+				E490DE58276A171200F96515 /* ServicioTableViewCell.swift in Sources */,
 				889E495F276A08BF009E88FC /* ServicioDetailViewController.swift in Sources */,
 				E49C00E2270AC38B00305AF3 /* InicioViewController.swift in Sources */,
+				E490DE5B276A178800F96515 /* SolicitudViewController.swift in Sources */,
 				E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */,
 				88C0322627672198006B6E22 /* PerfilViewController.swift in Sources */,
+				E490DE55276A169E00F96515 /* ServiciosViewController.swift in Sources */,
 				E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */,
 				88C1DFD82709E7FE008E1F5E /* HomeViewController.swift in Sources */,
+				E490DE5E276A17BD00F96515 /* SolicitudTableViewCell.swift in Sources */,
 				E4172AA326FDABEF003B91E4 /* SceneDelegate.swift in Sources */,
 				E49C00DC270AC04700305AF3 /* CorreoRecuperacionViewController.swift in Sources */,
 				88C1DFD52709E7E6008E1F5E /* SplashViewController.swift in Sources */,

@@ -11,7 +11,7 @@
         <!--Item-->
         <scene sceneID="BBx-5M-fEV">
             <objects>
-                <viewController id="dAy-Ao-v4W" sceneMemberID="viewController">
+                <viewController id="dAy-Ao-v4W" customClass="ServiciosViewController" customModule="proyecto_cliente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cnb-Mq-mtA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="u1h-ZH-jRx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="u1h-ZH-jRx" customClass="ServicioTableViewCell" customModule="proyecto_cliente" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="183.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u1h-ZH-jRx" id="g6l-4b-KIG">
@@ -153,8 +153,17 @@
                                                 <constraint firstAttribute="trailing" secondItem="6wN-jJ-jyL" secondAttribute="trailing" constant="15" id="ju4-2J-Mi7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblHoraRecojo" destination="JGC-IR-NGE" id="V1i-dr-8Ml"/>
+                                            <outlet property="lblLugarDestino" destination="31E-Cc-J3M" id="05I-xi-neo"/>
+                                            <outlet property="lblLugarRecojo" destination="pfC-i8-yej" id="IKX-JF-SLc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dAy-Ao-v4W" id="eya-lS-XD0"/>
+                                    <outlet property="delegate" destination="dAy-Ao-v4W" id="wwh-3E-MdU"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wCC-RT-iwC"/>
@@ -171,15 +180,19 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="PdO-h9-LXb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tblServicios" destination="guf-CA-hnq" id="mCn-xo-g5J"/>
+                        <segue destination="GAS-7s-5Z8" kind="show" identifier="ServicioDetailViewController" id="wij-Zo-XKK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdG-xf-sdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="377" y="171"/>
         </scene>
-        <!--View Controller-->
+        <!--Servicio Detail View Controller-->
         <scene sceneID="8Wj-qD-BkV">
             <objects>
-                <viewController id="GAS-7s-5Z8" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="GAS-7s-5Z8" customClass="ServicioDetailViewController" customModule="proyecto_cliente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UrS-sU-ABa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,6 +341,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvv-q7-z1F">
                                 <rect key="frame" x="10" y="54" width="66.5" height="22"/>
                                 <state key="normal" title="Button" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="clickBtnBack:" destination="GAS-7s-5Z8" eventType="touchUpInside" id="xzL-hi-1Z6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MbF-ie-xjs"/>
@@ -348,6 +364,15 @@
                             <constraint firstItem="OL5-xd-cxE" firstAttribute="leading" secondItem="MbF-ie-xjs" secondAttribute="leading" constant="20" id="zVI-6J-UFg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ODK-lM-PbG"/>
+                    <connections>
+                        <outlet property="ivImagen" destination="pgD-St-g8s" id="kGe-KF-efK"/>
+                        <outlet property="lblApellido" destination="DEh-5W-6wH" id="plo-Ea-1av"/>
+                        <outlet property="lblDestino" destination="3WC-z6-ULS" id="sOW-HQ-jcO"/>
+                        <outlet property="lblHora" destination="Tbw-kc-3d7" id="pr8-Dp-6Wi"/>
+                        <outlet property="lblNombre" destination="oeO-f4-Bi3" id="Mwz-ro-aHv"/>
+                        <outlet property="lblRecojo" destination="cN1-KH-Aqr" id="mfI-um-lxd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9x-LB-vcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
