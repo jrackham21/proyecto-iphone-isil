@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="EIl-8V-cQp" customClass="SolicitudTableViewCell" customModule="proyecto_cliente" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SolicitudTableViewCell" id="EIl-8V-cQp" customClass="SolicitudTableViewCell" customModule="proyecto_cliente" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="174.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EIl-8V-cQp" id="SzI-E7-4NJ">
@@ -88,7 +88,6 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstItem="kwr-xb-X51" firstAttribute="leading" secondItem="Fca-UQ-SRz" secondAttribute="leading" id="26t-fg-gjN"/>
                                                                 <constraint firstAttribute="trailing" secondItem="SnK-4V-lbn" secondAttribute="trailing" id="8iE-xd-Wvu"/>
