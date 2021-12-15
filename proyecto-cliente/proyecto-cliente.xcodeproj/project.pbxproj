@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		88142C8B2708030200406B11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88142C8A2708030200406B11 /* LoginViewController.swift */; };
+		8835B57D27698C5C003A72F0 /* Mapa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8835B57C27698C5C003A72F0 /* Mapa.storyboard */; };
+		889E495F276A08BF009E88FC /* ServicioDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889E495E276A08BF009E88FC /* ServicioDetailViewController.swift */; };
+		889E4962276A08EA009E88FC /* SolicitudDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889E4961276A08EA009E88FC /* SolicitudDetailViewController.swift */; };
 		88C03219276705B1006B6E22 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C03218276705B1006B6E22 /* Perfil.storyboard */; };
 		88C0322027672031006B6E22 /* Servicios.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C0321F27672031006B6E22 /* Servicios.storyboard */; };
 		88C0322327672044006B6E22 /* Solicitudes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C0322227672044006B6E22 /* Solicitudes.storyboard */; };
@@ -33,6 +36,9 @@
 /* Begin PBXFileReference section */
 		2EB15A61368BC5175EC2ACD1 /* Pods-proyecto-cliente.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyecto-cliente.release.xcconfig"; path = "Target Support Files/Pods-proyecto-cliente/Pods-proyecto-cliente.release.xcconfig"; sourceTree = "<group>"; };
 		88142C8A2708030200406B11 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8835B57C27698C5C003A72F0 /* Mapa.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mapa.storyboard; sourceTree = "<group>"; };
+		889E495E276A08BF009E88FC /* ServicioDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServicioDetailViewController.swift; path = "proyecto-cliente/Iphone/Storyboars/ServicioDetailViewController.swift"; sourceTree = SOURCE_ROOT; };
+		889E4961276A08EA009E88FC /* SolicitudDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SolicitudDetailViewController.swift; path = "proyecto-cliente/Iphone/Storyboars/SolicitudDetailViewController.swift"; sourceTree = SOURCE_ROOT; };
 		88C03218276705B1006B6E22 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 		88C0321F27672031006B6E22 /* Servicios.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Servicios.storyboard; sourceTree = "<group>"; };
 		88C0322227672044006B6E22 /* Solicitudes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Solicitudes.storyboard; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 				88C03218276705B1006B6E22 /* Perfil.storyboard */,
 				88C0321F27672031006B6E22 /* Servicios.storyboard */,
 				88C0322227672044006B6E22 /* Solicitudes.storyboard */,
+				8835B57C27698C5C003A72F0 /* Mapa.storyboard */,
 			);
 			path = Storyboars;
 			sourceTree = "<group>";
@@ -241,6 +248,8 @@
 		E47378A12766DD2F00EB20B6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				889E495E276A08BF009E88FC /* ServicioDetailViewController.swift */,
+				889E4961276A08EA009E88FC /* SolicitudDetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 				E46077D727386BB3006574AD /* Media.xcassets in Resources */,
 				E4172AAA26FDABF0003B91E4 /* Assets.xcassets in Resources */,
 				88C03219276705B1006B6E22 /* Perfil.storyboard in Resources */,
+				8835B57D27698C5C003A72F0 /* Mapa.storyboard in Resources */,
 				E47378A32766DF7700EB20B6 /* TabBar.storyboard in Resources */,
 				E4172AA826FDABEF003B91E4 /* Main.storyboard in Resources */,
 			);
@@ -367,7 +377,9 @@
 			files = (
 				88142C8B2708030200406B11 /* LoginViewController.swift in Sources */,
 				E4172AA526FDABEF003B91E4 /* ViewController.swift in Sources */,
+				889E4962276A08EA009E88FC /* SolicitudDetailViewController.swift in Sources */,
 				88C03229276721C6006B6E22 /* EditarPerfilViewController.swift in Sources */,
+				889E495F276A08BF009E88FC /* ServicioDetailViewController.swift in Sources */,
 				E49C00E2270AC38B00305AF3 /* InicioViewController.swift in Sources */,
 				E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */,
 				88C0322627672198006B6E22 /* PerfilViewController.swift in Sources */,

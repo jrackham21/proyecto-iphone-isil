@@ -81,7 +81,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora de recojo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-6G-bsr">
                                                                     <rect key="frame" x="0.0" y="119" width="256" height="19.5"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="19.5" id="UbB-1A-8WX"/>
+                                                                        <constraint firstAttribute="height" constant="19.5" id="g9B-0U-hBI"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                                     <nil key="textColor"/>
@@ -92,36 +92,36 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="Wif-JQ-JMI" secondAttribute="trailing" id="1cS-zS-1yB"/>
                                                                 <constraint firstAttribute="trailing" secondItem="irF-6k-rql" secondAttribute="trailing" id="6TR-Bc-DkB"/>
-                                                                <constraint firstItem="Wif-JQ-JMI" firstAttribute="top" secondItem="O5G-6G-bsr" secondAttribute="bottom" id="7KC-BT-yfT"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Wif-JQ-JMI" secondAttribute="bottom" constant="15" id="8OQ-we-x79"/>
                                                                 <constraint firstItem="fDt-dX-8cH" firstAttribute="leading" secondItem="DTG-pg-Z1n" secondAttribute="leading" id="8ys-f9-fFn"/>
-                                                                <constraint firstAttribute="trailing" secondItem="O5G-6G-bsr" secondAttribute="trailing" id="Jgy-NO-ngK"/>
+                                                                <constraint firstItem="Wif-JQ-JMI" firstAttribute="top" secondItem="O5G-6G-bsr" secondAttribute="bottom" id="HaN-JP-x2a"/>
                                                                 <constraint firstAttribute="trailing" secondItem="R5f-I5-lbz" secondAttribute="trailing" id="Kpk-0b-E3S"/>
                                                                 <constraint firstItem="fDt-dX-8cH" firstAttribute="top" secondItem="dGL-na-E0g" secondAttribute="bottom" constant="15" id="LgM-Zd-XLB"/>
                                                                 <constraint firstItem="R5f-I5-lbz" firstAttribute="top" secondItem="fDt-dX-8cH" secondAttribute="bottom" id="P19-8Q-3do"/>
                                                                 <constraint firstItem="Wif-JQ-JMI" firstAttribute="leading" secondItem="DTG-pg-Z1n" secondAttribute="leading" id="RpR-ZT-5CH"/>
                                                                 <constraint firstItem="dGL-na-E0g" firstAttribute="top" secondItem="irF-6k-rql" secondAttribute="bottom" id="SOi-eJ-yMp"/>
-                                                                <constraint firstItem="O5G-6G-bsr" firstAttribute="leading" secondItem="DTG-pg-Z1n" secondAttribute="leading" id="cS5-aL-c6N"/>
+                                                                <constraint firstAttribute="trailing" secondItem="O5G-6G-bsr" secondAttribute="trailing" id="Usm-Dw-gLH"/>
                                                                 <constraint firstItem="R5f-I5-lbz" firstAttribute="leading" secondItem="DTG-pg-Z1n" secondAttribute="leading" id="fKd-ZJ-lIs"/>
                                                                 <constraint firstItem="irF-6k-rql" firstAttribute="leading" secondItem="DTG-pg-Z1n" secondAttribute="leading" id="gen-Pv-0TD"/>
-                                                                <constraint firstItem="O5G-6G-bsr" firstAttribute="top" secondItem="R5f-I5-lbz" secondAttribute="bottom" constant="15" id="iXu-et-RKT"/>
                                                                 <constraint firstItem="irF-6k-rql" firstAttribute="top" secondItem="DTG-pg-Z1n" secondAttribute="top" constant="15" id="krv-hX-Tew"/>
+                                                                <constraint firstItem="Wif-JQ-JMI" firstAttribute="top" secondItem="O5G-6G-bsr" secondAttribute="bottom" id="mIG-c3-bdi"/>
                                                                 <constraint firstItem="dGL-na-E0g" firstAttribute="leading" secondItem="DTG-pg-Z1n" secondAttribute="leading" id="mw0-je-BwU"/>
-                                                                <constraint firstItem="Wif-JQ-JMI" firstAttribute="top" secondItem="O5G-6G-bsr" secondAttribute="bottom" id="qoX-1V-ZFI"/>
+                                                                <constraint firstItem="O5G-6G-bsr" firstAttribute="leading" secondItem="DTG-pg-Z1n" secondAttribute="leading" id="oMS-eY-wWh"/>
                                                                 <constraint firstAttribute="trailing" secondItem="dGL-na-E0g" secondAttribute="trailing" id="vP5-xa-Xgu"/>
+                                                                <constraint firstItem="O5G-6G-bsr" firstAttribute="top" secondItem="R5f-I5-lbz" secondAttribute="bottom" constant="15" id="wSb-oI-wFJ"/>
                                                             </constraints>
                                                         </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="A8h-Wn-fig">
                                                             <rect key="frame" x="320" y="41.5" width="64" height="89"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mup-S4-e2T">
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mup-S4-e2T">
                                                                     <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                     <state key="normal" title="Aceptar">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-9Z-IUp">
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-9Z-IUp">
                                                                     <rect key="frame" x="0.0" y="59" width="64" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                     <state key="normal" title="Rechazar">
