@@ -16,8 +16,15 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var lblCorreo: UILabel!
     @IBOutlet weak var imgPerfil: UIImageView!
 
+    var email: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupData()
+    }
+    
+    func setupData() {
+        self.lblCorreo.text = self.email
     }
     
     

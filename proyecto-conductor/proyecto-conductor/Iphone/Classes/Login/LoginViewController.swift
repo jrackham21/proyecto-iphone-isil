@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     
     private let emailKey = "emailUserSigned"
     private let storage = UserDefaults.standard
+    var email:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,14 @@ class LoginViewController: UIViewController {
         }else{
             swichtRecordar.isOn = false
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let controller = segue.destination as? PerfilViewController, let email = sender as? String {
+            controller.email = email
+        }
+        
     }
     
     @IBAction func tapToCloseKeyboard(_ sender: Any) {
@@ -45,7 +54,7 @@ class LoginViewController: UIViewController {
                     }else{
                         self.storage.removeObject(forKey: self.emailKey)
                     }
-                    self.performSegue(withIdentifier: "TabBarViewController", sender: nil)
+                    self.performSegue(withIdentifier: "TabBarViewController", sender: email)
                 }else{
                     self.showAlertMessage(title: "Error", mensaje: error!.localizedDescription)
                 }

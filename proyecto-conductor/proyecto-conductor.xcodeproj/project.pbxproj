@@ -24,6 +24,7 @@
 		E488BE1627095651002E3146 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE1527095651002E3146 /* SplashViewController.swift */; };
 		E488BE19270957F0002E3146 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE18270957F0002E3146 /* HomeViewController.swift */; };
 		E488BE1D2709692D002E3146 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE1C2709692D002E3146 /* LoginViewController.swift */; };
+		E490DE392769FC1800F96515 /* SolicitudTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490DE382769FC1800F96515 /* SolicitudTableViewCell.swift */; };
 		E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */; };
 		E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */; };
 		E4B66485275D80E100A23562 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B66484275D80E100A23562 /* TabBar.storyboard */; };
@@ -61,6 +62,7 @@
 		E488BE1527095651002E3146 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E488BE18270957F0002E3146 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E488BE1C2709692D002E3146 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E490DE382769FC1800F96515 /* SolicitudTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitudTableViewCell.swift; sourceTree = "<group>"; };
 		E4A8EB0C2705799400E0BA97 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		E4A8EB0F27058A7200E0BA97 /* CorreoRecuperacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorreoRecuperacionViewController.swift; sourceTree = "<group>"; };
 		E4B66484275D80E100A23562 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				E4B6648A275D8CEB00A23562 /* ServicioPorEjecutarViewController.swift */,
 				E4B66490275D8D8800A23562 /* ServicioTableViewCell.swift */,
 				E4B664CB275DC4FD00A23562 /* SolicitudViewController.swift */,
+				E490DE382769FC1800F96515 /* SolicitudTableViewCell.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				E47378AF2767111500EB20B6 /* Conductor.swift in Sources */,
 				E488BE19270957F0002E3146 /* HomeViewController.swift in Sources */,
 				E47378AC2767110300EB20B6 /* Cliente.swift in Sources */,
+				E490DE392769FC1800F96515 /* SolicitudTableViewCell.swift in Sources */,
 				E4B66494275D8DD700A23562 /* ServicioDetailViewController.swift in Sources */,
 				E4B6649D275D9A2400A23562 /* PerfilViewController.swift in Sources */,
 				E4B664CC275DC4FD00A23562 /* SolicitudViewController.swift in Sources */,

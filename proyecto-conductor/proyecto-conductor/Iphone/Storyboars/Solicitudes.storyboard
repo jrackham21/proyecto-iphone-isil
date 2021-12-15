@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ServicioTableViewCell" id="l8a-05-Iuj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SolicitudTableViewCell" id="l8a-05-Iuj" customClass="SolicitudTableViewCell" customModule="proyecto_conductor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="171.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l8a-05-Iuj" id="T2n-Ge-FWA">
@@ -88,7 +88,6 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="Wif-JQ-JMI" secondAttribute="trailing" id="1cS-zS-1yB"/>
                                                                 <constraint firstAttribute="trailing" secondItem="irF-6k-rql" secondAttribute="trailing" id="6TR-Bc-DkB"/>
@@ -114,14 +113,14 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="A8h-Wn-fig">
                                                             <rect key="frame" x="320" y="41.5" width="64" height="89"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mup-S4-e2T">
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mup-S4-e2T">
                                                                     <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                     <state key="normal" title="Aceptar">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-9Z-IUp">
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-9Z-IUp">
                                                                     <rect key="frame" x="0.0" y="59" width="64" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                     <state key="normal" title="Rechazar">
@@ -147,8 +146,17 @@
                                                 <constraint firstItem="H9F-vI-jTn" firstAttribute="top" secondItem="T2n-Ge-FWA" secondAttribute="top" id="FhC-u1-Tdu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDestino" destination="R5f-I5-lbz" id="u8Y-6Z-4Cm"/>
+                                            <outlet property="lblHora" destination="Wif-JQ-JMI" id="hwW-RQ-fVH"/>
+                                            <outlet property="lblRecojo" destination="dGL-na-E0g" id="8sC-fC-3YG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ItC-Dk-06X" id="5AA-wL-afI"/>
+                                    <outlet property="delegate" destination="ItC-Dk-06X" id="MGo-ia-i1x"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRP-1e-TmC">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -182,6 +190,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Solicitudes" image="bell" catalog="system" selectedImage="bell.fill" id="g81-h8-DeD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tblSolicitudes" destination="Zoj-1M-fJy" id="nuG-Ee-W2z"/>
+                        <segue destination="W5W-J1-uzU" kind="show" identifier="SolicitudDetailViewController" id="ytq-79-SWa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fd9-W8-nM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +202,7 @@
         <!--Solicitud Detail View Controller-->
         <scene sceneID="atr-l1-3yw">
             <objects>
-                <viewController id="W5W-J1-uzU" customClass="SolicitudDetailViewController" customModule="proyecto_conductor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="W5W-J1-uzU" customClass="SolicitudDetailViewController" customModule="proyecto_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfb-b8-GqS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,6 +382,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IGK-PF-tuN"/>
+                    <connections>
+                        <outlet property="ivImagen" destination="4QY-yn-CQ3" id="4NT-pU-pIh"/>
+                        <outlet property="lblApellido" destination="lHY-un-EAi" id="bQc-TR-pZJ"/>
+                        <outlet property="lblDestino" destination="lqc-UK-nnv" id="5P8-t9-91t"/>
+                        <outlet property="lblHora" destination="ZdB-Jd-hBi" id="HDU-gY-ZMt"/>
+                        <outlet property="lblNombre" destination="tLI-MA-UPE" id="obs-ha-whg"/>
+                        <outlet property="lblRecojo" destination="bb5-W9-g9R" id="IuF-Go-aGt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hG-TH-QMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
