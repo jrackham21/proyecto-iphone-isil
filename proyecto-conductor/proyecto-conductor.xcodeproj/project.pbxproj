@@ -15,6 +15,11 @@
 		E4172AAD26FDABF0003B91E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4172AAB26FDABF0003B91E4 /* LaunchScreen.storyboard */; };
 		E44110AF273865C100476F09 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44110AE273865C100476F09 /* Media.xcassets */; };
 		E47378922766D99200EB20B6 /* SolicitudDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47378912766D99200EB20B6 /* SolicitudDetailViewController.swift */; };
+		E47378A627670F0100EB20B6 /* ServiciosWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47378A527670F0100EB20B6 /* ServiciosWS.swift */; };
+		E47378A927670FB300EB20B6 /* Servicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47378A827670FB300EB20B6 /* Servicio.swift */; };
+		E47378AC2767110300EB20B6 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47378AB2767110300EB20B6 /* Cliente.swift */; };
+		E47378AF2767111500EB20B6 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47378AE2767111500EB20B6 /* Conductor.swift */; };
+		E47378B2276711EC00EB20B6 /* Clousures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47378B1276711EC00EB20B6 /* Clousures.swift */; };
 		E4759CE42737A28C005F1F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4759CE32737A28C005F1F77 /* GoogleService-Info.plist */; };
 		E488BE1627095651002E3146 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE1527095651002E3146 /* SplashViewController.swift */; };
 		E488BE19270957F0002E3146 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E488BE18270957F0002E3146 /* HomeViewController.swift */; };
@@ -47,6 +52,11 @@
 		E4172AAE26FDABF0003B91E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44110AE273865C100476F09 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		E47378912766D99200EB20B6 /* SolicitudDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitudDetailViewController.swift; sourceTree = "<group>"; };
+		E47378A527670F0100EB20B6 /* ServiciosWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiciosWS.swift; sourceTree = "<group>"; };
+		E47378A827670FB300EB20B6 /* Servicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servicio.swift; sourceTree = "<group>"; };
+		E47378AB2767110300EB20B6 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
+		E47378AE2767111500EB20B6 /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
+		E47378B1276711EC00EB20B6 /* Clousures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clousures.swift; sourceTree = "<group>"; };
 		E4759CE32737A28C005F1F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E488BE1527095651002E3146 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E488BE18270957F0002E3146 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +154,9 @@
 		E4B66478275D7A8100A23562 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				E47378A827670FB300EB20B6 /* Servicio.swift */,
+				E47378AB2767110300EB20B6 /* Cliente.swift */,
+				E47378AE2767111500EB20B6 /* Conductor.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -151,6 +164,7 @@
 		E4B66479275D7A9F00A23562 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				E47378A527670F0100EB20B6 /* ServiciosWS.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				E4B66487275D822A00A23562 /* TabBarViewController.swift */,
+				E47378B1276711EC00EB20B6 /* Clousures.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -378,18 +393,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4A8EB0D2705799400E0BA97 /* RegistroViewController.swift in Sources */,
+				E47378AF2767111500EB20B6 /* Conductor.swift in Sources */,
 				E488BE19270957F0002E3146 /* HomeViewController.swift in Sources */,
+				E47378AC2767110300EB20B6 /* Cliente.swift in Sources */,
 				E4B66494275D8DD700A23562 /* ServicioDetailViewController.swift in Sources */,
 				E4B6649D275D9A2400A23562 /* PerfilViewController.swift in Sources */,
 				E4B664CC275DC4FD00A23562 /* SolicitudViewController.swift in Sources */,
 				E4B6648B275D8CEB00A23562 /* ServicioPorEjecutarViewController.swift in Sources */,
 				E4B66491275D8D8800A23562 /* ServicioTableViewCell.swift in Sources */,
+				E47378A927670FB300EB20B6 /* Servicio.swift in Sources */,
 				E4172AA126FDABEF003B91E4 /* AppDelegate.swift in Sources */,
+				E47378B2276711EC00EB20B6 /* Clousures.swift in Sources */,
 				E47378922766D99200EB20B6 /* SolicitudDetailViewController.swift in Sources */,
 				E4B66488275D822A00A23562 /* TabBarViewController.swift in Sources */,
 				E488BE1D2709692D002E3146 /* LoginViewController.swift in Sources */,
 				E4B664A5275DAB1C00A23562 /* EditarPerfilViewController.swift in Sources */,
 				E4A8EB1027058A7200E0BA97 /* CorreoRecuperacionViewController.swift in Sources */,
+				E47378A627670F0100EB20B6 /* ServiciosWS.swift in Sources */,
 				E488BE1627095651002E3146 /* SplashViewController.swift in Sources */,
 				E4172AA326FDABEF003B91E4 /* SceneDelegate.swift in Sources */,
 			);

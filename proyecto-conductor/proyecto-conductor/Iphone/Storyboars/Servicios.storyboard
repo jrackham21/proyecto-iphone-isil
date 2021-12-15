@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ServicioTableViewCell" id="Pzf-On-ePU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ServicioTableViewCell" id="Pzf-On-ePU" customClass="ServicioTableViewCell" customModule="proyecto_conductor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="171.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pzf-On-ePU" id="g7s-hg-wtF">
@@ -105,7 +105,6 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="BwI-2I-Td4" secondAttribute="trailing" id="3iU-l8-R4q"/>
                                                                 <constraint firstItem="BwI-2I-Td4" firstAttribute="top" secondItem="naZ-SV-tB2" secondAttribute="bottom" id="3rz-A6-h2c"/>
@@ -131,14 +130,14 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Ju3-Ts-FXA">
                                                             <rect key="frame" x="323" y="41.5" width="61" height="89"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W84-DL-4VG">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W84-DL-4VG">
                                                                     <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                     <state key="normal" title="Finalizar">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5X-7W-TWl">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5X-7W-TWl">
                                                                     <rect key="frame" x="0.0" y="59" width="61" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                     <state key="normal" title="Cancelar">
@@ -164,8 +163,17 @@
                                                 <constraint firstItem="xCq-PP-2T8" firstAttribute="leading" secondItem="g7s-hg-wtF" secondAttribute="leading" constant="15" id="pQ4-9N-4cZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblHoraRecojo" destination="VGe-XM-ojp" id="6P7-hR-pus"/>
+                                            <outlet property="lblLugarDestino" destination="OAD-vH-bTG" id="ktY-tc-GCM"/>
+                                            <outlet property="lblLugarRecojo" destination="BwI-2I-Td4" id="0hq-t0-A0O"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5Ol-43-TTk" id="dJl-UF-phH"/>
+                                    <outlet property="delegate" destination="5Ol-43-TTk" id="sWo-Yx-ebX"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U1O-s0-iB6"/>
@@ -183,6 +191,10 @@
                     <tabBarItem key="tabBarItem" title="Por Ejecutar" image="car" catalog="system" selectedImage="car.fill" id="zQO-rf-Lim"/>
                     <navigationItem key="navigationItem" id="p8r-6K-OZa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tblServicios" destination="4Y6-W0-Rl5" id="jaG-S2-vDW"/>
+                        <segue destination="YiH-FB-pdp" kind="show" identifier="ServicioDetailViewController" id="qBZ-Gg-SeZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ9-Pc-GiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,7 +203,7 @@
         <!--Servicio Detail View Controller-->
         <scene sceneID="Au8-UZ-tcQ">
             <objects>
-                <viewController id="YiH-FB-pdp" customClass="ServicioDetailViewController" customModule="proyecto_conductor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="YiH-FB-pdp" customClass="ServicioDetailViewController" customModule="proyecto_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPt-xO-jiR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -371,6 +383,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xf4-Kr-b83"/>
+                    <connections>
+                        <outlet property="ivImagen" destination="OEN-WK-xNp" id="yis-ui-odt"/>
+                        <outlet property="lblApellido" destination="Wag-wn-F5D" id="8x5-5E-I9y"/>
+                        <outlet property="lblDestino" destination="YeW-6S-ILL" id="s70-jH-5G9"/>
+                        <outlet property="lblHora" destination="O12-H6-Jto" id="Dxs-kM-TsY"/>
+                        <outlet property="lblNombre" destination="huk-97-dsR" id="O9b-GV-qG0"/>
+                        <outlet property="lblRecojo" destination="bDG-C1-T5y" id="bZZ-X1-eoQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WK5-Bg-RB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
