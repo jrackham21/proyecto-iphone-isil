@@ -105,7 +105,6 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="BwI-2I-Td4" secondAttribute="trailing" id="3iU-l8-R4q"/>
                                                                 <constraint firstItem="BwI-2I-Td4" firstAttribute="top" secondItem="naZ-SV-tB2" secondAttribute="bottom" id="3rz-A6-h2c"/>
@@ -194,6 +193,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tblServicios" destination="4Y6-W0-Rl5" id="jaG-S2-vDW"/>
+                        <segue destination="YiH-FB-pdp" kind="show" identifier="ServicioDetailViewController" id="qBZ-Gg-SeZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ9-Pc-GiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -203,7 +203,7 @@
         <!--Servicio Detail View Controller-->
         <scene sceneID="Au8-UZ-tcQ">
             <objects>
-                <viewController id="YiH-FB-pdp" customClass="ServicioDetailViewController" customModule="proyecto_conductor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="YiH-FB-pdp" customClass="ServicioDetailViewController" customModule="proyecto_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPt-xO-jiR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -383,6 +383,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xf4-Kr-b83"/>
+                    <connections>
+                        <outlet property="ivImagen" destination="OEN-WK-xNp" id="yis-ui-odt"/>
+                        <outlet property="lblApellido" destination="Wag-wn-F5D" id="8x5-5E-I9y"/>
+                        <outlet property="lblDestino" destination="YeW-6S-ILL" id="s70-jH-5G9"/>
+                        <outlet property="lblHora" destination="O12-H6-Jto" id="Dxs-kM-TsY"/>
+                        <outlet property="lblNombre" destination="huk-97-dsR" id="O9b-GV-qG0"/>
+                        <outlet property="lblRecojo" destination="bDG-C1-T5y" id="bZZ-X1-eoQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WK5-Bg-RB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
